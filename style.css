@@ -1,0 +1,55 @@
+/* style.css */
+body {
+  font-family: 'Noto Sans SC', Arial, sans-serif;
+  background: #f7f5ef;
+  color: #3e2c1b;
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  text-align: center;
+  margin: 36px 0 20px 0;
+  letter-spacing: 2px;
+}
+.photo-category {
+  margin: 40px 0;
+  padding: 0 20px;
+}
+.photo-category h2 {
+  font-size: 1.5em;
+  color: #3e2c1b;
+  border-left: 6px solid #bfa77a;
+  padding-left: 10px;
+  margin-bottom: 16px;
+}
+.photo-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: flex-start;
+}
+.photo-item {
+  width: 160px;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 12px;
+}
+.photo-item img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+}
+.photo-item p {
+  font-size: 0.95em;
+  color: #6b4f2c;
+  margin: 6px 0 8px 0;
+}
+@media (max-width: 700px) {
+  .photo-grid { gap: 8px; }
+  .photo-item { width: 46vw; }
+  .photo-item img { height: 24vw; }
+}
